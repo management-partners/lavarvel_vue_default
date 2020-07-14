@@ -2,7 +2,7 @@
 const backendRouter = [{
     path: '/admin',
     component: () =>
-        import ('../components/home/Dashboard'),
+        import (/* webpackChunkName: "Home" */ '../components/home/Dashboard'),
     name: 'backend',
 }];
 

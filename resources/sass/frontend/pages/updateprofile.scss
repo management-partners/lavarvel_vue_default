@@ -1,0 +1,26 @@
+#updateprofile {
+    width: 70%;
+    // margin-top: 6%;
+    // color: #3c7f00;
+    .boder-form {
+        padding: 0 10%;
+    }
+    .container {
+        margin-top: 20px;
+    }
+    #preview {
+        position: absolute;
+        right: 0px;
+        top: -40px;
+        .img-thumbnail {
+            height: 90px !important;
+        }
+    }
+    .custom-file {
+        max-width: 18rem;
+        overflow: hidden;
+    }
+    .custom-file-label {
+        white-space: nowrap;
+    }
+}

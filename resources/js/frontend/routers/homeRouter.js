@@ -2,7 +2,7 @@
 const homeRouter = [{
     path: '/',
     component: () =>
-        import ('../components/home/Home'),
+        import (/* webpackChunkName: "Home" */ '../components/home/Home'),
     name: 'home',
 }];
 

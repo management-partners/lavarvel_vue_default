@@ -1,1 +1,296 @@
-//
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/brands';
+@import 'pages/home.scss';
+@import 'pages/aboutus.scss';
+@import 'pages/login.scss';
+@import 'pages/register.scss';
+@import 'pages/forgetpassword.scss';
+@import 'pages/contactus.scss';
+@import 'pages/updatepassword.scss';
+@import 'pages/updateprofile.scss';
+@import 'pages/updatekeygg.scss';
+@import 'pages/updatekeyTrello.scss';
+@import 'pages/services.scss';
+html {
+    scroll-behavior: smooth;
+}
+
+main {
+    padding-bottom: 2%;
+    .container {
+        padding-top: 10%;
+        max-width: 86%;
+    }
+    .content-container {
+        padding-top: 7%;
+    }
+}
+
+.logo-img {
+    width: 60%;
+}
+
+.form-shadow {
+    -moz-box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.4);
+    -o-box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.4);
+    -ms-box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.4);
+    .form-header {
+        background-color: #c3c3c3;
+    }
+    .form-body {
+        background-color: #e2e2e2;
+    }
+    .green-input-group {
+        background-color: #2d6909;
+        color: white;
+    }
+    .theme-input-group {
+        background-color: $color-background;
+        color: white;
+    }
+    // action button
+    .hbtn {
+        position: relative;
+        box-sizing: border-box;
+        display: inline-block;
+        overflow: hidden;
+        padding: 8px 20px;
+        margin: 0px 3px 6px;
+        text-align: center;
+        border: 2px solid rgb(23, 162, 184);
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        white-space: nowrap;
+        z-index: 0;
+    }
+    .hbtn i {
+        padding-right: 8px;
+    }
+    .hb-fill-right::before {
+        position: absolute;
+        content: "";
+        background: #28A745;
+        transition-duration: 0.3s;
+        z-index: -1;
+        top: 0px;
+        right: auto;
+        bottom: auto;
+        left: 0px;
+        width: 0px;
+        height: 100%;
+        opacity: 1;
+    }
+    .hb-fill-right:hover::before {
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+    }
+    .hb-fill-right:hover {
+        color: rgb(255, 255, 255);
+        background: #28A745;
+        transition: color 0.3s ease 0s, background 0s ease 0.3s;
+    }
+    // cancel button
+    .hbtnCancel {
+        position: relative;
+        box-sizing: border-box;
+        display: inline-block;
+        overflow: hidden;
+        padding: 8px 20px;
+        margin: 0px 3px 6px;
+        text-align: center;
+        border: 2px solid rgb(23, 162, 184);
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        white-space: nowrap;
+        z-index: 0;
+    }
+    .hbtnCancel i {
+        padding-right: 8px;
+    }
+    .hbCancel-fill-right::before {
+        position: absolute;
+        content: "";
+        background: $color-background;
+        transition-duration: 0.3s;
+        z-index: -1;
+        top: 0px;
+        right: auto;
+        bottom: auto;
+        left: 0px;
+        width: 0px;
+        height: 100%;
+        opacity: 1;
+    }
+    .hbCancel-fill-right:hover::before {
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+    }
+    .hbCancel-fill-right:hover {
+        color: rgb(0, 0, 0);
+        background: $color-background;
+        transition: color 0.3s ease 0s, background 0s ease 0.3s;
+    }
+    .text-shadow {
+        text-shadow: 2px 2px 8px #FF0000;
+    }
+}
+
+.navbar-brand {
+    padding-top: 0px !important;
+    margin-right: 0px !important;
+}
+
+.user-info {
+    height: 25px;
+    img {
+        width: 50px;
+        margin-top: -20px;
+    }
+    .login .nav-link,
+    .register .nav-link {
+        padding-top: 0px;
+    }
+}
+
+.navbar-color {
+    background-color: #09c;
+}
+
+.btn-space {
+    padding-top: 3%;
+}
+
+.boder-form {
+    padding: 3%;
+}
+
+h3 {
+    text-transform: uppercase;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: $color-background;
+    color: white;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 4px;
+    i {
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -o-transform: rotate(-900deg);
+        -ms-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+    }
+}
+
+.nav-link {
+    color: #fff !important;
+}
+
+.dropdown {
+    .dropdown-menu {
+        transition: all 0.5s;
+        overflow: hidden;
+        transform-origin: top center;
+        transform: scale(1, 0);
+        display: block;
+        
+    }
+    &:hover {
+        .dropdown-menu {
+            transform: scale(1);
+            padding: 0px;
+        }
+    }
+}
+
+.dropdown-menu {
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    .dropdown-item {
+        min-height: 40px;
+        vertical-align: middle;
+        padding-top: 7px;
+        background-color: #e3f2fd;
+    }
+    .dropdown-item:hover {
+        background-color: #cfe8f9;
+        opacity: .8;
+    }
+    .dropdown-divider {
+        margin: 0px;
+    }
+}
+
+// footer
+.footer {
+    background-color: #e3f2fd;
+    font-size: 0.8rem;
+    padding-top: 1%;
+    .container {
+        text-align: center;
+    }
+    .label-none-bottom {
+        margin-bottom: 0px !important;
+    }
+    .license {
+        background-color: $color-background;
+    }
+    .footer-container {
+        padding-bottom: 2%;
+        .footer-item {
+            padding-left: 7%;
+        }
+    }
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+    .user-info {
+        height: 120px;
+        padding-top: 1%;
+    }
+    .user-info img {
+        width: 10%;
+        margin-top: 0px;
+    }
+    .navbar-nav .dropdown-menu {
+        margin-top: -10px;
+    }
+    .navbar-toggler {
+        padding: 0px;
+        background-color: #fff;
+    }
+    .sub-menu {
+        height: 35px;
+    }
+    .img-hidden {
+        display: none;
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {}

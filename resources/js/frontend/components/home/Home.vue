@@ -1,14 +1,15 @@
 <template>
-	<main role="main" class="flex-shrink-0">
-		This is user page
-	</main>
+  <!-- Begin page content -->
+  <main role="main" class="flex-shrink-0">
+	  
+</main>
 </template>
 
 <script>
-	export default {
-	    name: 'Home',
-        data: function() {
-	        return {}
-        },
-    }
+export default {
+  name: "Home",
+  data: function() {
+    return {};
+  }
+};
 </script>
