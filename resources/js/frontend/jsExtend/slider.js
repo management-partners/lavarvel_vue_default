@@ -28,7 +28,7 @@ ethereum.autoRefreshOnNetworkChange = false;
       .find("[data-animation ^= 'animated']");
 
   //Initialize carousel
-  $myCarousel.carousel();
+  $myCarousel.carousel('cycle');
 
   //Animate captions in first slide on page load
   doAnimations($firstAnimatingElems);

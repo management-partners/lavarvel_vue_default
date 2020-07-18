@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+
     @include('frontend.head')
     
     <body class="d-flex flex-column h-100">

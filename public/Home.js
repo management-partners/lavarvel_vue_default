@@ -196,19 +196,14 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "main",
-    { staticClass: "flex-shrink-0", attrs: { role: "main" } },
-    [_c("Slider"), _vm._v(" "), _vm._m(0)],
-    1
-  )
+  return _c("div", [_c("Slider"), _vm._v(" "), _vm._m(0)], 1)
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container wow bounceInUp" }, [
+    return _c("div", { staticClass: "container wow bounceInUp home-content" }, [
       _c("div", { staticClass: "pro-best" }, [
         _c("div", { staticClass: "item-bar" }, [
           _c("h4", [_vm._v("Tin tuc moi nhat")])
@@ -759,7 +754,7 @@ ethereum.autoRefreshOnNetworkChange = false;
   var $myCarousel = $("#carouselExampleIndicators"),
       $firstAnimatingElems = $myCarousel.find(".carousel-item:first").find("[data-animation ^= 'animated']"); //Initialize carousel
 
-  $myCarousel.carousel(); //Animate captions in first slide on page load
+  $myCarousel.carousel('cycle'); //Animate captions in first slide on page load
 
   doAnimations($firstAnimatingElems); //Other slides to be animated on carousel slide event
 

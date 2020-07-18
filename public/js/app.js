@@ -43,7 +43,7 @@
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "" + ({"vendors~Home":"vendors~Home","Home":"Home"}[chunkId]||chunkId) + ".js"
+/******/ 		return __webpack_require__.p + "" + ({"AboutUs":"AboutUs","ContactUs":"ContactUs","Login":"Login","News":"News","Profile":"Profile","Register":"Register","Sevice":"Sevice","UpdateGoogle":"UpdateGoogle","UpdatePassword":"UpdatePassword","UpdateTrello":"UpdateTrello","vendors~Home":"vendors~Home","Home":"Home"}[chunkId]||chunkId) + ".js"
 /******/ 	}
 /******/
 /******/ 	// The require function
@@ -2155,8 +2155,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
-//
 //
 //
 //
@@ -31516,7 +31514,8 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c(
-    "div",
+    "main",
+    { staticClass: "flex-shrink-0", attrs: { role: "main" } },
     [
       _c("Header"),
       _vm._v(" "),
@@ -31561,7 +31560,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("footer", { staticClass: "footer mt-auto" }, [
+    return _c("footer", { staticClass: "footer" }, [
       _c("div", { staticClass: "container footer-container" }, [
         _c("div", { staticClass: "row" }, [
           _c("div", { staticClass: "col-md-6 text-left footer-item" }, [
@@ -31682,247 +31681,310 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("header", [
+    _c(
+      "nav",
+      {
+        staticClass:
+          "navbar navbar-expand-md navbar-ligh fixed-top navbar-color"
+      },
+      [
+        _c("router-link", { staticClass: "navbar-brand", attrs: { to: "/" } }, [
+          _c("img", {
+            staticClass: "logo-img",
+            attrs: { src: "images/logo.png", alt: "" }
+          })
+        ]),
+        _vm._v(" "),
+        _vm._m(0),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass: "collapse navbar-collapse",
+            attrs: { id: "navbarCollapse" }
+          },
+          [
+            _c("ul", { staticClass: "navbar-nav mr-auto" }, [
+              _c(
+                "li",
+                { staticClass: "nav-item" },
+                [
+                  _c(
+                    "router-link",
+                    { staticClass: "nav-link", attrs: { to: "/" } },
+                    [_vm._v("Home")]
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                { staticClass: "nav-item" },
+                [
+                  _c(
+                    "router-link",
+                    { staticClass: "nav-link", attrs: { to: "/about-us" } },
+                    [_vm._v("About US")]
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c("li", { staticClass: "nav-item" }, [
+                _c("ul", { staticClass: "navbar-nav ml-auto" }, [
+                  _c("li", { staticClass: "nav-item dropdown sub-menu" }, [
+                    _c(
+                      "a",
+                      {
+                        staticClass: "nav-link",
+                        attrs: {
+                          id: "sv",
+                          href: "#",
+                          "data-toggle": "dropdown",
+                          "aria-haspopup": "true",
+                          "aria-expanded": "false"
+                        }
+                      },
+                      [_vm._v("Services")]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "dropdown-menu dropdown-menu-lg dropdown-menu-left"
+                      },
+                      [
+                        _c(
+                          "router-link",
+                          {
+                            staticClass: "dropdown-item",
+                            attrs: { to: "/advisory" }
+                          },
+                          [_vm._v("Advisory")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "router-link",
+                          {
+                            staticClass: "dropdown-item",
+                            attrs: { to: "/website" }
+                          },
+                          [_vm._v("Website")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "router-link",
+                          {
+                            staticClass: "dropdown-item",
+                            attrs: { to: "/software" }
+                          },
+                          [_vm._v("Software")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "router-link",
+                          {
+                            staticClass: "dropdown-item",
+                            attrs: { to: "/mobile" }
+                          },
+                          [_vm._v("Mobile")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "router-link",
+                          {
+                            staticClass: "dropdown-item",
+                            attrs: { to: "/marketing" }
+                          },
+                          [_vm._v("Marketing")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "router-link",
+                          {
+                            staticClass: "dropdown-item",
+                            attrs: { to: "/recruitment" }
+                          },
+                          [_vm._v("Recruitment")]
+                        )
+                      ],
+                      1
+                    )
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c(
+                "li",
+                { staticClass: "nav-item" },
+                [
+                  _c(
+                    "router-link",
+                    { staticClass: "nav-link", attrs: { to: "/news" } },
+                    [_vm._v("News")]
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                { staticClass: "nav-item" },
+                [
+                  _c(
+                    "router-link",
+                    { staticClass: "nav-link", attrs: { to: "/contact-us" } },
+                    [_vm._v("Contact Us")]
+                  )
+                ],
+                1
+              )
+            ]),
+            _vm._v(" "),
+            _c("ul", { staticClass: "navbar-nav ml-auto user-info" }, [
+              _c(
+                "li",
+                { staticClass: "nav-item register" },
+                [
+                  _c(
+                    "router-link",
+                    { staticClass: "nav-link", attrs: { to: "/register" } },
+                    [_vm._v("Register")]
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "li",
+                { staticClass: "nav-item login" },
+                [
+                  _c(
+                    "router-link",
+                    { staticClass: "nav-link", attrs: { to: "/login" } },
+                    [_vm._v("Login")]
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c("li", { staticClass: "nav-item dropdown" }, [
+                _vm._m(1),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "dropdown-menu dropdown-menu-lg dropdown-menu-right"
+                  },
+                  [
+                    _c(
+                      "router-link",
+                      {
+                        staticClass: "dropdown-item",
+                        attrs: { to: "/update-profile" }
+                      },
+                      [_vm._v("Update Profile")]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "router-link",
+                      {
+                        staticClass: "dropdown-item",
+                        attrs: { to: "/update-password" }
+                      },
+                      [_vm._v("Update Password")]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "dropdown-divider" }),
+                    _vm._v(" "),
+                    _c(
+                      "router-link",
+                      {
+                        staticClass: "dropdown-item",
+                        attrs: { to: "/update-google" }
+                      },
+                      [_vm._v("Update Key Google")]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "router-link",
+                      {
+                        staticClass: "dropdown-item",
+                        attrs: { to: "/update-trello" }
+                      },
+                      [_vm._v("Update Key Trello")]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "dropdown-divider" }),
+                    _vm._v(" "),
+                    _c(
+                      "router-link",
+                      {
+                        staticClass: "dropdown-item",
+                        attrs: { to: "/logout" }
+                      },
+                      [_vm._v("Logout")]
+                    )
+                  ],
+                  1
+                )
+              ])
+            ])
+          ]
+        )
+      ],
+      1
+    )
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("header", [
-      _c(
-        "nav",
-        {
-          staticClass:
-            "navbar navbar-expand-md navbar-ligh fixed-top navbar-color"
-        },
-        [
-          _c("a", { staticClass: "navbar-brand", attrs: { href: "#" } }, [
-            _c("img", {
-              staticClass: "logo-img",
-              attrs: { src: "images/logo.png", alt: "" }
-            })
-          ]),
-          _vm._v(" "),
-          _c(
-            "button",
-            {
-              staticClass: "navbar-toggler",
-              attrs: {
-                type: "button",
-                "data-toggle": "collapse",
-                "data-target": "#navbarCollapse",
-                "aria-controls": "navbarCollapse",
-                "aria-expanded": "true",
-                "aria-label": "Toggle navigation"
-              }
-            },
-            [_c("span", { staticClass: "navbar-toggler-icon" })]
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass: "collapse navbar-collapse",
-              attrs: { id: "navbarCollapse" }
-            },
-            [
-              _c("ul", { staticClass: "navbar-nav mr-auto" }, [
-                _c("li", { staticClass: "nav-item" }, [
-                  _c("a", { staticClass: "nav-link", attrs: { href: "#" } }, [
-                    _vm._v("Home")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("li", { staticClass: "nav-item" }, [
-                  _c("a", { staticClass: "nav-link", attrs: { href: "#" } }, [
-                    _vm._v("About US")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("li", { staticClass: "nav-item" }, [
-                  _c("ul", { staticClass: "navbar-nav ml-auto" }, [
-                    _c("li", { staticClass: "nav-item dropdown sub-menu" }, [
-                      _c(
-                        "a",
-                        {
-                          staticClass: "nav-link",
-                          attrs: {
-                            id: "sv",
-                            href: "#",
-                            "data-toggle": "dropdown",
-                            "aria-haspopup": "true",
-                            "aria-expanded": "false"
-                          }
-                        },
-                        [_vm._v("Services")]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        {
-                          staticClass:
-                            "dropdown-menu dropdown-menu-lg dropdown-menu-left"
-                        },
-                        [
-                          _c(
-                            "a",
-                            {
-                              staticClass: "dropdown-item",
-                              attrs: { href: "#" }
-                            },
-                            [_vm._v("Advisory")]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "a",
-                            {
-                              staticClass: "dropdown-item",
-                              attrs: { href: "#" }
-                            },
-                            [_vm._v("Website")]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "a",
-                            {
-                              staticClass: "dropdown-item",
-                              attrs: { href: "#" }
-                            },
-                            [_vm._v("Software")]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "a",
-                            {
-                              staticClass: "dropdown-item",
-                              attrs: { href: "#" }
-                            },
-                            [_vm._v("Mobile")]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "a",
-                            {
-                              staticClass: "dropdown-item",
-                              attrs: { href: "#" }
-                            },
-                            [_vm._v("Marketing")]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "a",
-                            {
-                              staticClass: "dropdown-item",
-                              attrs: { href: "#" }
-                            },
-                            [_vm._v("Recruitment")]
-                          )
-                        ]
-                      )
-                    ])
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("li", { staticClass: "nav-item" }, [
-                  _c("a", { staticClass: "nav-link", attrs: { href: "#" } }, [
-                    _vm._v("News")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("li", { staticClass: "nav-item" }, [
-                  _c("a", { staticClass: "nav-link", attrs: { href: "#" } }, [
-                    _vm._v("Contact Us")
-                  ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("ul", { staticClass: "navbar-nav ml-auto user-info" }, [
-                _c("li", { staticClass: "nav-item register" }, [
-                  _c("a", { staticClass: "nav-link", attrs: { href: "#" } }, [
-                    _vm._v("Registration")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("li", { staticClass: "nav-item login" }, [
-                  _c("a", { staticClass: "nav-link", attrs: { href: "#" } }, [
-                    _vm._v("Login")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("li", { staticClass: "nav-item dropdown" }, [
-                  _c(
-                    "a",
-                    {
-                      staticClass: "nav-link",
-                      attrs: {
-                        href: "#",
-                        id: "navbarDropdownMenuLink",
-                        "data-toggle": "dropdown",
-                        "aria-haspopup": "true",
-                        "aria-expanded": "false"
-                      }
-                    },
-                    [
-                      _c("img", {
-                        staticClass: "img-circle",
-                        attrs: {
-                          src: "images/AdminLTELogo.png",
-                          alt: "AdminLTE Logo"
-                        }
-                      })
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    {
-                      staticClass:
-                        "dropdown-menu dropdown-menu-lg dropdown-menu-right"
-                    },
-                    [
-                      _c(
-                        "a",
-                        { staticClass: "dropdown-item", attrs: { href: "#" } },
-                        [_vm._v("Update Profile")]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "a",
-                        { staticClass: "dropdown-item", attrs: { href: "#" } },
-                        [_vm._v("Update Password")]
-                      ),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "dropdown-divider" }),
-                      _vm._v(" "),
-                      _c(
-                        "a",
-                        { staticClass: "dropdown-item", attrs: { href: "#" } },
-                        [_vm._v("Update Key Google")]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "a",
-                        { staticClass: "dropdown-item", attrs: { href: "#" } },
-                        [_vm._v("Update Key Trello")]
-                      ),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "dropdown-divider" }),
-                      _vm._v(" "),
-                      _c(
-                        "a",
-                        { staticClass: "dropdown-item", attrs: { href: "#" } },
-                        [_vm._v("Logout")]
-                      )
-                    ]
-                  )
-                ])
-              ])
-            ]
-          )
-        ]
-      )
-    ])
+    return _c(
+      "button",
+      {
+        staticClass: "navbar-toggler",
+        attrs: {
+          type: "button",
+          "data-toggle": "collapse",
+          "data-target": "#navbarCollapse",
+          "aria-controls": "navbarCollapse",
+          "aria-expanded": "true",
+          "aria-label": "Toggle navigation"
+        }
+      },
+      [_c("span", { staticClass: "navbar-toggler-icon" })]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "a",
+      {
+        staticClass: "nav-link",
+        attrs: {
+          href: "#",
+          id: "navbarDropdownMenuLink",
+          "data-toggle": "dropdown",
+          "aria-haspopup": "true",
+          "aria-expanded": "false"
+        }
+      },
+      [
+        _c("img", {
+          staticClass: "img-circle",
+          attrs: { src: "images/AdminLTELogo.png", alt: "AdminLTE Logo" }
+        })
+      ]
+    )
   }
 ]
 render._withStripped = true
@@ -48926,13 +48988,37 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 /*!******************************************!*\
   !*** ./resources/js/frontend/api/api.js ***!
   \******************************************/
-/*! exports provided: API_HOME */
+/*! exports provided: API_HOME, API_ABOUT_US, API_NEWS, API_ADVISORY, API_MARKETING, API_MOBILE, API_SEVICES, API_SOFTWARE, API_WEBSITE, API_LOGIN, API_PROFILE, API_REGISTER, API_GOOGLE */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "API_HOME", function() { return API_HOME; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "API_ABOUT_US", function() { return API_ABOUT_US; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "API_NEWS", function() { return API_NEWS; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "API_ADVISORY", function() { return API_ADVISORY; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "API_MARKETING", function() { return API_MARKETING; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "API_MOBILE", function() { return API_MOBILE; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "API_SEVICES", function() { return API_SEVICES; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "API_SOFTWARE", function() { return API_SOFTWARE; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "API_WEBSITE", function() { return API_WEBSITE; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "API_LOGIN", function() { return API_LOGIN; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "API_PROFILE", function() { return API_PROFILE; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "API_REGISTER", function() { return API_REGISTER; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "API_GOOGLE", function() { return API_GOOGLE; });
 var API_HOME = '/api';
+var API_ABOUT_US = '/api/aboutUs';
+var API_NEWS = '/api/news';
+var API_ADVISORY = '/api/services/advisory';
+var API_MARKETING = '/api/services/marketing';
+var API_MOBILE = '/api/services/mobile';
+var API_SEVICES = '/api/services/service';
+var API_SOFTWARE = '/api/services/software';
+var API_WEBSITE = '/api/services/website';
+var API_LOGIN = '/api/users/login';
+var API_PROFILE = '/api/users/profile';
+var API_REGISTER = '/api/users/register';
+var API_GOOGLE = '/api/users/updateGG';
 
 
 /***/ }),
@@ -49260,6 +49346,50 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/frontend/routers/aboutUs/aboutUsRouter.js":
+/*!****************************************************************!*\
+  !*** ./resources/js/frontend/routers/aboutUs/aboutUsRouter.js ***!
+  \****************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+
+
+var aboutUsRouter = [{
+  path: '/about-us',
+  component: function component() {
+    return __webpack_require__.e(/*! import() | AboutUs */ "AboutUs").then(__webpack_require__.bind(null, /*! ../../components/aboutUs/AboutUs */ "./resources/js/frontend/components/aboutUs/AboutUs.vue"));
+  },
+  name: 'AboutUs'
+}];
+/* harmony default export */ __webpack_exports__["default"] = (aboutUsRouter);
+
+/***/ }),
+
+/***/ "./resources/js/frontend/routers/contactUs/contactUsRouter.js":
+/*!********************************************************************!*\
+  !*** ./resources/js/frontend/routers/contactUs/contactUsRouter.js ***!
+  \********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+
+
+var contactUsRouter = [{
+  path: '/contact-us',
+  component: function component() {
+    return __webpack_require__.e(/*! import() | ContactUs */ "ContactUs").then(__webpack_require__.bind(null, /*! ../../components/contactUs/ContactUs */ "./resources/js/frontend/components/contactUs/ContactUs.vue"));
+  },
+  name: 'ContactUs'
+}];
+/* harmony default export */ __webpack_exports__["default"] = (contactUsRouter);
+
+/***/ }),
+
 /***/ "./resources/js/frontend/routers/homeRouter.js":
 /*!*****************************************************!*\
   !*** ./resources/js/frontend/routers/homeRouter.js ***!
@@ -49282,6 +49412,28 @@ var homeRouter = [{
 
 /***/ }),
 
+/***/ "./resources/js/frontend/routers/news/newsRouter.js":
+/*!**********************************************************!*\
+  !*** ./resources/js/frontend/routers/news/newsRouter.js ***!
+  \**********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+
+
+var newsRouter = [{
+  path: '/about-us',
+  component: function component() {
+    return __webpack_require__.e(/*! import() | News */ "News").then(__webpack_require__.bind(null, /*! ../../components/news/News */ "./resources/js/frontend/components/news/News.vue"));
+  },
+  name: 'News'
+}];
+/* harmony default export */ __webpack_exports__["default"] = (newsRouter);
+
+/***/ }),
+
 /***/ "./resources/js/frontend/routers/routers.js":
 /*!**************************************************!*\
   !*** ./resources/js/frontend/routers/routers.js ***!
@@ -49292,6 +49444,12 @@ var homeRouter = [{
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _homeRouter__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./homeRouter */ "./resources/js/frontend/routers/homeRouter.js");
+/* harmony import */ var _aboutUs_aboutUsRouter__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./aboutUs/aboutUsRouter */ "./resources/js/frontend/routers/aboutUs/aboutUsRouter.js");
+/* harmony import */ var _contactUs_contactUsRouter__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./contactUs/contactUsRouter */ "./resources/js/frontend/routers/contactUs/contactUsRouter.js");
+/* harmony import */ var _news_newsRouter__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./news/newsRouter */ "./resources/js/frontend/routers/news/newsRouter.js");
+/* harmony import */ var _services_serviceRouter__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./services/serviceRouter */ "./resources/js/frontend/routers/services/serviceRouter.js");
+/* harmony import */ var _users_profileRouter__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./users/profileRouter */ "./resources/js/frontend/routers/users/profileRouter.js");
+/* harmony import */ var _users_googleTrelloRouter__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./users/googleTrelloRouter */ "./resources/js/frontend/routers/users/googleTrelloRouter.js");
 
 
 function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
@@ -49308,9 +49466,178 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 
 
 
-var routes = _toConsumableArray(_homeRouter__WEBPACK_IMPORTED_MODULE_0__["default"]);
 
+
+
+
+
+var routes = [].concat(_toConsumableArray(_homeRouter__WEBPACK_IMPORTED_MODULE_0__["default"]), _toConsumableArray(_aboutUs_aboutUsRouter__WEBPACK_IMPORTED_MODULE_1__["default"]), _toConsumableArray(_contactUs_contactUsRouter__WEBPACK_IMPORTED_MODULE_2__["default"]), _toConsumableArray(_news_newsRouter__WEBPACK_IMPORTED_MODULE_3__["default"]), _toConsumableArray(_services_serviceRouter__WEBPACK_IMPORTED_MODULE_4__["default"]), _toConsumableArray(_users_profileRouter__WEBPACK_IMPORTED_MODULE_5__["default"]), _toConsumableArray(_users_googleTrelloRouter__WEBPACK_IMPORTED_MODULE_6__["default"]));
 /* harmony default export */ __webpack_exports__["default"] = (routes);
+
+/***/ }),
+
+/***/ "./resources/js/frontend/routers/services/serviceRouter.js":
+/*!*****************************************************************!*\
+  !*** ./resources/js/frontend/routers/services/serviceRouter.js ***!
+  \*****************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+
+
+var serviceRouter = [{
+  path: '/service',
+  component: function component() {
+    return __webpack_require__.e(/*! import() | Sevice */ "Sevice").then(__webpack_require__.bind(null, /*! ../../components/services/Service */ "./resources/js/frontend/components/services/Service.vue"));
+  },
+  name: 'Service'
+}, {
+  path: '/advisory',
+  component: function component() {
+    return __webpack_require__.e(/*! import() | Sevice */ "Sevice").then(__webpack_require__.bind(null, /*! ../../components/services/Advisory */ "./resources/js/frontend/components/services/Advisory.vue"));
+  },
+  name: 'Advisory'
+}, {
+  path: '/marketing',
+  component: function component() {
+    return __webpack_require__.e(/*! import() | Sevice */ "Sevice").then(__webpack_require__.bind(null, /*! ../../components/services/Marketing */ "./resources/js/frontend/components/services/Marketing.vue"));
+  },
+  name: 'Marketing'
+}, {
+  path: '/mobile',
+  component: function component() {
+    return __webpack_require__.e(/*! import() | Sevice */ "Sevice").then(__webpack_require__.bind(null, /*! ../../components/services/Mobile */ "./resources/js/frontend/components/services/Mobile.vue"));
+  },
+  name: 'Mobile'
+}, {
+  path: '/software',
+  component: function component() {
+    return __webpack_require__.e(/*! import() | Sevice */ "Sevice").then(__webpack_require__.bind(null, /*! ../../components/services/Software */ "./resources/js/frontend/components/services/Software.vue"));
+  },
+  name: 'Software'
+}, {
+  path: '/website',
+  component: function component() {
+    return __webpack_require__.e(/*! import() | Sevice */ "Sevice").then(__webpack_require__.bind(null, /*! ../../components/services/Website */ "./resources/js/frontend/components/services/Website.vue"));
+  },
+  name: 'website'
+}];
+/* harmony default export */ __webpack_exports__["default"] = (serviceRouter);
+
+/***/ }),
+
+/***/ "./resources/js/frontend/routers/users/googleTrelloRouter.js":
+/*!*******************************************************************!*\
+  !*** ./resources/js/frontend/routers/users/googleTrelloRouter.js ***!
+  \*******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+
+
+var updateGGRouter = [{
+  path: '/update-google',
+  component: function component() {
+    return __webpack_require__.e(/*! import() | UpdateGoogle */ "UpdateGoogle").then(__webpack_require__.bind(null, /*! ../../components/users/UpdateGoogle */ "./resources/js/frontend/components/users/UpdateGoogle.vue"));
+  },
+  name: 'UpdateGoogle'
+}, {
+  path: '/update-trello',
+  component: function component() {
+    return __webpack_require__.e(/*! import() | UpdateTrello */ "UpdateTrello").then(__webpack_require__.bind(null, /*! ../../components/users/UpdateTrello */ "./resources/js/frontend/components/users/UpdateTrello.vue"));
+  },
+  name: 'UpdateTrello'
+}];
+/* harmony default export */ __webpack_exports__["default"] = (updateGGRouter);
+
+/***/ }),
+
+/***/ "./resources/js/frontend/routers/users/profileRouter.js":
+/*!**************************************************************!*\
+  !*** ./resources/js/frontend/routers/users/profileRouter.js ***!
+  \**************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+
+
+var profileRouter = [{
+  path: '/profile',
+  component: function component() {
+    return __webpack_require__.e(/*! import() | Profile */ "Profile").then(__webpack_require__.bind(null, /*! ../../components/users/Profile */ "./resources/js/frontend/components/users/Profile.vue"));
+  },
+  name: 'Profile'
+}, {
+  path: '/login',
+  component: function component() {
+    return __webpack_require__.e(/*! import() | Login */ "Login").then(__webpack_require__.bind(null, /*! ../../components/users/Login */ "./resources/js/frontend/components/users/Login.vue"));
+  },
+  name: 'Login'
+}, {
+  path: '/register',
+  component: function component() {
+    return __webpack_require__.e(/*! import() | Register */ "Register").then(__webpack_require__.bind(null, /*! ../../components/users/Register */ "./resources/js/frontend/components/users/Register.vue"));
+  },
+  name: 'Register'
+}, {
+  path: '/update-password',
+  component: function component() {
+    return __webpack_require__.e(/*! import() | UpdatePassword */ "UpdatePassword").then(__webpack_require__.bind(null, /*! ../../components/users/UpdatePassword */ "./resources/js/frontend/components/users/UpdatePassword.vue"));
+  },
+  name: 'UpdatePassword'
+}];
+/* harmony default export */ __webpack_exports__["default"] = (profileRouter);
+
+/***/ }),
+
+/***/ "./resources/js/frontend/stores/aboutUs/aboutUsStore.js":
+/*!**************************************************************!*\
+  !*** ./resources/js/frontend/stores/aboutUs/aboutUsStore.js ***!
+  \**************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _api_api__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../api/api */ "./resources/js/frontend/api/api.js");
+
+
+
+
+
+
+vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vuex__WEBPACK_IMPORTED_MODULE_1__["default"]);
+var aboutUsStore = {
+  namespaced: true,
+  state: {
+    about: []
+  },
+  mutations: {
+    FETCH: function FETCH(state, about) {
+      state.about = about;
+    }
+  },
+  actions: {
+    fetch: function fetch(_ref) {
+      var commit = _ref.commit;
+      return axios__WEBPACK_IMPORTED_MODULE_2___default.a.get(_api_api__WEBPACK_IMPORTED_MODULE_3__["API_ABOUT_US"]).then(function (response) {
+        return commit('FETCH', response.data);
+      })["catch"]();
+    }
+  }
+};
+/* harmony default export */ __webpack_exports__["default"] = (aboutUsStore);
 
 /***/ }),
 
@@ -49359,6 +49686,96 @@ var homeStore = {
 
 /***/ }),
 
+/***/ "./resources/js/frontend/stores/news/newsStore.js":
+/*!********************************************************!*\
+  !*** ./resources/js/frontend/stores/news/newsStore.js ***!
+  \********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _api_api__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../api/api */ "./resources/js/frontend/api/api.js");
+
+
+
+
+
+
+vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vuex__WEBPACK_IMPORTED_MODULE_1__["default"]);
+var newsStore = {
+  namespaced: true,
+  state: {
+    news: []
+  },
+  mutations: {
+    FETCH: function FETCH(state, news) {
+      state.news = news;
+    }
+  },
+  actions: {
+    fetch: function fetch(_ref) {
+      var commit = _ref.commit;
+      return axios__WEBPACK_IMPORTED_MODULE_2___default.a.get(_api_api__WEBPACK_IMPORTED_MODULE_3__["API_NEWS"]).then(function (response) {
+        return commit('FETCH', response.data);
+      })["catch"]();
+    }
+  }
+};
+/* harmony default export */ __webpack_exports__["default"] = (newsStore);
+
+/***/ }),
+
+/***/ "./resources/js/frontend/stores/services/serviceStore.js":
+/*!***************************************************************!*\
+  !*** ./resources/js/frontend/stores/services/serviceStore.js ***!
+  \***************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _api_api__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../api/api */ "./resources/js/frontend/api/api.js");
+
+
+
+
+
+
+vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vuex__WEBPACK_IMPORTED_MODULE_1__["default"]);
+var serviceStore = {
+  namespaced: true,
+  state: {
+    service: []
+  },
+  mutations: {
+    FETCH: function FETCH(state, service) {
+      state.service = service;
+    }
+  },
+  actions: {
+    fetch: function fetch(_ref) {
+      var commit = _ref.commit;
+      return axios__WEBPACK_IMPORTED_MODULE_2___default.a.get(API_MOBILE).then(function (response) {
+        return commit('FETCH', response.data);
+      })["catch"]();
+    }
+  }
+};
+/* harmony default export */ __webpack_exports__["default"] = (serviceStore);
+
+/***/ }),
+
 /***/ "./resources/js/frontend/stores/store.js":
 /*!***********************************************!*\
   !*** ./resources/js/frontend/stores/store.js ***!
@@ -49370,16 +49787,121 @@ var homeStore = {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _homeStore__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./homeStore */ "./resources/js/frontend/stores/homeStore.js");
 /* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
+/* harmony import */ var _aboutUs_aboutUsStore__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./aboutUs/aboutUsStore */ "./resources/js/frontend/stores/aboutUs/aboutUsStore.js");
+/* harmony import */ var _news_newsStore__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./news/newsStore */ "./resources/js/frontend/stores/news/newsStore.js");
+/* harmony import */ var _services_serviceStore__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./services/serviceStore */ "./resources/js/frontend/stores/services/serviceStore.js");
+/* harmony import */ var _users_profileStore__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./users/profileStore */ "./resources/js/frontend/stores/users/profileStore.js");
+/* harmony import */ var _users_googleTrelloStore__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./users/googleTrelloStore */ "./resources/js/frontend/stores/users/googleTrelloStore.js");
+
+
+
+
+
 
 
 
 
 var stores = new vuex__WEBPACK_IMPORTED_MODULE_1__["default"].Store({
   modules: {
-    product: _homeStore__WEBPACK_IMPORTED_MODULE_0__["default"]
+    product: _homeStore__WEBPACK_IMPORTED_MODULE_0__["default"],
+    aboutUs: _aboutUs_aboutUsStore__WEBPACK_IMPORTED_MODULE_2__["default"],
+    news: _news_newsStore__WEBPACK_IMPORTED_MODULE_3__["default"],
+    service: _services_serviceStore__WEBPACK_IMPORTED_MODULE_4__["default"],
+    profile: _users_profileStore__WEBPACK_IMPORTED_MODULE_5__["default"],
+    googleTrello: _users_googleTrelloStore__WEBPACK_IMPORTED_MODULE_6__["default"]
   }
 });
 /* harmony default export */ __webpack_exports__["default"] = (stores);
+
+/***/ }),
+
+/***/ "./resources/js/frontend/stores/users/googleTrelloStore.js":
+/*!*****************************************************************!*\
+  !*** ./resources/js/frontend/stores/users/googleTrelloStore.js ***!
+  \*****************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _api_api__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../api/api */ "./resources/js/frontend/api/api.js");
+
+
+
+
+
+
+vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vuex__WEBPACK_IMPORTED_MODULE_1__["default"]);
+var googleTrelloStore = {
+  namespaced: true,
+  state: {
+    gg: []
+  },
+  mutations: {
+    FETCH: function FETCH(state, gg) {
+      state.gg = gg;
+    }
+  },
+  actions: {
+    fetch: function fetch(_ref) {
+      var commit = _ref.commit;
+      return axios__WEBPACK_IMPORTED_MODULE_2___default.a.get(_api_api__WEBPACK_IMPORTED_MODULE_3__["API_GOOGLE"]).then(function (response) {
+        return commit('FETCH', response.data);
+      })["catch"]();
+    }
+  }
+};
+/* harmony default export */ __webpack_exports__["default"] = (googleTrelloStore);
+
+/***/ }),
+
+/***/ "./resources/js/frontend/stores/users/profileStore.js":
+/*!************************************************************!*\
+  !*** ./resources/js/frontend/stores/users/profileStore.js ***!
+  \************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _api_api__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../api/api */ "./resources/js/frontend/api/api.js");
+
+
+
+
+
+
+vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vuex__WEBPACK_IMPORTED_MODULE_1__["default"]);
+var profileStore = {
+  namespaced: true,
+  state: {
+    profile: []
+  },
+  mutations: {
+    FETCH: function FETCH(state, profile) {
+      state.profile = profile;
+    }
+  },
+  actions: {
+    fetch: function fetch(_ref) {
+      var commit = _ref.commit;
+      return axios__WEBPACK_IMPORTED_MODULE_2___default.a.get(_api_api__WEBPACK_IMPORTED_MODULE_3__["API_PROFILE"]).then(function (response) {
+        return commit('FETCH', response.data);
+      })["catch"]();
+    }
+  }
+};
+/* harmony default export */ __webpack_exports__["default"] = (profileStore);
 
 /***/ }),
 

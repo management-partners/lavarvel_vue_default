@@ -1,8 +1,8 @@
 <template>
   <!-- Begin page content -->
-  <main role="main" class="flex-shrink-0">
+  <div>
     <Slider />
-    <div class="container wow bounceInUp">
+    <div class="container wow bounceInUp home-content">
       <div class="pro-best">
         <div class="item-bar">
           <h4>Tin tuc moi nhat</h4>
@@ -79,7 +79,7 @@
         </div>
       </div>
     </div>
-  </main>
+  </div>
 </template>
 
 <script>

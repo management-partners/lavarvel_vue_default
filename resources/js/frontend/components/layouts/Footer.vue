@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer mt-auto">
+  <footer class="footer">
     <div class="container footer-container">
       <div class="row">
         <div class="col-md-6 text-left footer-item">

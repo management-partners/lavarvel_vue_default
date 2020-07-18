@@ -1,6 +1,16 @@
 {
     "/js/app.js": "/js/app.js",
     "/css/app.css": "/css/app.css",
+    "/AboutUs.js": "/AboutUs.js",
     "/Home.js": "/Home.js",
-    "/vendors~Home.js": "/vendors~Home.js"
+    "/News.js": "/News.js",
+    "/Sevice.js": "/Sevice.js",
+    "/vendors~Home.js": "/vendors~Home.js",
+    "/ContactUs.js": "/ContactUs.js",
+    "/Login.js": "/Login.js",
+    "/Profile.js": "/Profile.js",
+    "/Register.js": "/Register.js",
+    "/UpdateGoogle.js": "/UpdateGoogle.js",
+    "/UpdatePassword.js": "/UpdatePassword.js",
+    "/UpdateTrello.js": "/UpdateTrello.js"
 }

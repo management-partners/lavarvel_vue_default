@@ -2,9 +2,7 @@
   <header>
     <!-- Fixed navbar -->
     <nav class="navbar navbar-expand-md navbar-ligh fixed-top navbar-color">
-      <a class="navbar-brand" href="#">
-        <img src="images/logo.png" alt class="logo-img" />
-      </a>
+      <router-link class="navbar-brand"  to="/"><img src="images/logo.png" alt class="logo-img" /></router-link>
       <button
         class="navbar-toggler"
         type="button"
@@ -19,10 +17,10 @@
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
+            <router-link class="nav-link" to="/">Home</router-link>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About US</a>
+            <router-link class="nav-link" to="/about-us">About US</router-link>
           </li>
           <li class="nav-item">
             <ul class="navbar-nav ml-auto">
@@ -36,29 +34,29 @@
                   aria-expanded="false"
                 >Services</a>
                 <div class="dropdown-menu dropdown-menu-lg dropdown-menu-left">
-                  <a class="dropdown-item" href="#">Advisory</a>
-                  <a class="dropdown-item" href="#">Website</a>
-                  <a class="dropdown-item" href="#">Software</a>
-                  <a class="dropdown-item" href="#">Mobile</a>
-                  <a class="dropdown-item" href="#">Marketing</a>
-                  <a class="dropdown-item" href="#">Recruitment</a>
+                  <router-link class="dropdown-item" to="/advisory">Advisory</router-link>
+                  <router-link class="dropdown-item" to="/website">Website</router-link>
+                  <router-link class="dropdown-item" to="/software">Software</router-link>
+                  <router-link class="dropdown-item" to="/mobile">Mobile</router-link>
+                  <router-link class="dropdown-item" to="/marketing">Marketing</router-link>
+                  <router-link class="dropdown-item" to="/recruitment">Recruitment</router-link>
                 </div>
               </li>
             </ul>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">News</a>
+            <router-link class="nav-link" to="/news">News</router-link>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Contact Us</a>
+            <router-link class="nav-link" to="/contact-us">Contact Us</router-link>          
           </li>
         </ul>
         <ul class="navbar-nav ml-auto user-info">
           <li class="nav-item register">
-            <a href="#" class="nav-link">Registration</a>
+            <router-link class="nav-link" to="/register">Register</router-link>
           </li>
           <li class="nav-item login">
-            <a class="nav-link" href="#">Login</a>
+            <router-link class="nav-link" to="/login">Login</router-link>
           </li>
 
           <li class="nav-item dropdown">
@@ -77,13 +75,13 @@
               />
             </a>
             <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-              <a href="#" class="dropdown-item">Update Profile</a>
-              <a href="#" class="dropdown-item">Update Password</a>
+              <router-link class="dropdown-item" to="/update-profile">Update Profile</router-link>
+              <router-link class="dropdown-item" to="/update-password">Update Password</router-link>
               <div class="dropdown-divider"></div>
-              <a href="#" class="dropdown-item">Update Key Google</a>
-              <a href="#" class="dropdown-item">Update Key Trello</a>
+              <router-link class="dropdown-item" to="/update-google">Update Key Google</router-link>
+              <router-link class="dropdown-item" to="/update-trello">Update Key Trello</router-link>
               <div class="dropdown-divider"></div>
-              <a href="#" class="dropdown-item">Logout</a>
+              <router-link class="dropdown-item" to="/logout">Logout</router-link>
             </div>
           </li>
         </ul>

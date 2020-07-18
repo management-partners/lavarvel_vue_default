@@ -1,11 +1,11 @@
 <template>
-  <div>
+  <main role="main" class="flex-shrink-0">
     <Header />
     <transition name="fade" mode="out-in">
       <router-view />
     </transition>
     <Footer />
-  </div>
+  </main>
 </template>
 <style>
 .fade-enter-active,

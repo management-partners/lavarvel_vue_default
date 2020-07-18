@@ -8,4 +8,5 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
     <link rel="stylesheet" href="{{url('css/sticky-footer-navbar.css')}}">
     <link rel="stylesheet" href="{{url('css/app.css')}}">
+    
 </head>

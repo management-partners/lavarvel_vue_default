@@ -1,7 +1,37 @@
 #aboutus {
     h3 {
         color: #3c7f00;
+        margin-top: 1%;
     }
+    .title-bar{
+        margin: auto;
+        padding: 1%;
+        width: 30%;
+        color: white;
+        padding-left: 2%;
+        text-align: center;
+        margin-bottom: 2%;
+        // background-image: linear-gradient(to right, rgb(0, 153, 204) 10%, rgba(0,0,0,0)); /* Standard syntax (must be last) */
+        background-image: linear-gradient(to right, rgba(0,0,0,0)5px, rgb(0, 153, 204) 50%, rgba(0,0,0,0));
+      }
+      .small-bar{
+        width: 20%;
+      }
+      .tv-title {
+        animation-delay: 1s;
+      }
+      .tv-show{
+        animation-delay: 2s;
+      }
+      .lv-title {
+        animation-delay: 3s;
+      }
+      .lv-show-left{
+        animation-delay: 4s;
+      }
+      .lv-show-right{
+        animation-delay: 5s;
+      }
 }
 
 // Extra small devices (portrait phones, less than 576px)
