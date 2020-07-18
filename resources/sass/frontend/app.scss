@@ -13,6 +13,8 @@
 @import 'pages/updatekeygg.scss';
 @import 'pages/updatekeyTrello.scss';
 @import 'pages/services.scss';
+@import 'pages/slider.scss';
+
 html {
     scroll-behavior: smooth;
 }
@@ -20,7 +22,7 @@ html {
 main {
     padding-bottom: 2%;
     .container {
-        padding-top: 10%;
+        // padding-top: 10%;
         max-width: 86%;
     }
     .content-container {
