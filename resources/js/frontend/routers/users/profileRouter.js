@@ -23,6 +23,18 @@ const profileRouter = [
         component: () =>
             import (/* webpackChunkName: "UpdatePassword" */ '../../components/users/UpdatePassword'),
         name: 'UpdatePassword',
+    },
+    {
+        path: '/update-profile',
+        component: () =>
+            import (/* webpackChunkName: "UpdatePassword" */ '../../components/users/UpdateProfile'),
+        name: 'UpdateProfile',
+    },
+    {
+        path: '/forget-password',
+        component: () =>
+            import (/* webpackChunkName: "UpdatePassword" */ '../../components/users/ForgetPassword'),
+        name: 'ForgetPassword',
     }
 ];
 

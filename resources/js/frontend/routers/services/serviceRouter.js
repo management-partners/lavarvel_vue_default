@@ -1,7 +1,7 @@
 "use strict";
 const serviceRouter = [
     {
-        path: '/service',
+        path: '/services',
         component: () =>
             import(/* webpackChunkName: "Sevice" */ '../../components/services/Service'),
         name: 'Service',

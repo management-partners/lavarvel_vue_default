@@ -31642,7 +31642,7 @@ var staticRenderFns = [
           ])
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "row text-center fixed-bottom license" }, [
+        _c("div", { staticClass: "row fixed-bottom license" }, [
           _c("div", { staticClass: "col-md-12" }, [
             _vm._v("\n        Copyright © 2020-2019\n        "),
             _c(
@@ -49488,7 +49488,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var serviceRouter = [{
-  path: '/service',
+  path: '/services',
   component: function component() {
     return __webpack_require__.e(/*! import() | Sevice */ "Sevice").then(__webpack_require__.bind(null, /*! ../../components/services/Service */ "./resources/js/frontend/components/services/Service.vue"));
   },
@@ -49591,6 +49591,18 @@ var profileRouter = [{
     return __webpack_require__.e(/*! import() | UpdatePassword */ "UpdatePassword").then(__webpack_require__.bind(null, /*! ../../components/users/UpdatePassword */ "./resources/js/frontend/components/users/UpdatePassword.vue"));
   },
   name: 'UpdatePassword'
+}, {
+  path: '/update-profile',
+  component: function component() {
+    return __webpack_require__.e(/*! import() | UpdatePassword */ "UpdatePassword").then(__webpack_require__.bind(null, /*! ../../components/users/UpdateProfile */ "./resources/js/frontend/components/users/UpdateProfile.vue"));
+  },
+  name: 'UpdateProfile'
+}, {
+  path: '/forget-password',
+  component: function component() {
+    return __webpack_require__.e(/*! import() | UpdatePassword */ "UpdatePassword").then(__webpack_require__.bind(null, /*! ../../components/users/ForgetPassword */ "./resources/js/frontend/components/users/ForgetPassword.vue"));
+  },
+  name: 'ForgetPassword'
 }];
 /* harmony default export */ __webpack_exports__["default"] = (profileRouter);
 

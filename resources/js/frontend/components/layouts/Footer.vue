@@ -27,7 +27,7 @@
           <label for="mobile" class="col label-none-bottom">Mobile: 07040656347</label>
         </div>
       </div>
-      <div class="row text-center fixed-bottom license">
+      <div class="row fixed-bottom license">
         <div class="col-md-12">
           Copyright &copy; 2020-2019
           <a href="http://www.vietoffshore.com" style="color: white">vietoffshore</a>.All rights reserved.

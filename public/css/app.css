@@ -6162,7 +6162,6 @@ readers do not read off random characters that represent icons */
 
 #aboutus h3 {
   color: #3c7f00;
-  margin-top: 1%;
 }
 
 #aboutus .title-bar {
@@ -6207,13 +6206,15 @@ readers do not read off random characters that represent icons */
 
 #login {
   width: 40%;
-  margin-top: 10%;
+  margin-top: 5%;
+  margin-bottom: 12%;
   color: #3c7f00;
 }
 
 #register {
   width: 70%;
-  margin-top: 5%;
+  margin-top: 3%;
+  margin-bottom: 4%;
   color: #3c7f00;
 }
 
@@ -6222,26 +6223,27 @@ readers do not read off random characters that represent icons */
 }
 
 #forgetpassword {
-  width: 40%;
-  margin-top: 15%;
+  width: 60%;
+  margin-top: 7%;
+  margin-bottom: 16%;
   color: #3c7f00;
 }
 
 #contactus {
   width: 70%;
   margin-top: 1%;
-  margin-bottom: 6%;
+  margin-bottom: 8%;
   color: #3c7f00;
 }
 
 #contactus h3 {
   color: #3c7f00;
-  margin-top: 1%;
 }
 
 #updatepassword {
-  width: 50%;
-  margin-top: 10%;
+  width: 60%;
+  margin-top: 6%;
+  margin-bottom: 12%;
   color: #3c7f00;
 }
 
@@ -6250,7 +6252,7 @@ readers do not read off random characters that represent icons */
 }
 
 #updateprofile {
-  width: 70%;
+  width: 60%;
 }
 
 #updateprofile .boder-form {
@@ -6280,28 +6282,30 @@ readers do not read off random characters that represent icons */
   white-space: nowrap;
 }
 
-#updatekeygg {
+#updategoogle {
   width: 40%;
-  margin-top: 5%;
+  margin-top: 11%;
+  margin-bottom: 15%;
   color: #3c7f00;
 }
 
-#updatekeygg .boder-form {
+#updategoogle .boder-form {
   padding: 5% 10%;
 }
 
-#updatekeytrello {
+#updatetrello {
   width: 40%;
-  margin-top: 5%;
+  margin-top: 11%;
+  margin-bottom: 15%;
   color: #3c7f00;
 }
 
-#updatekeytrello .boder-form {
+#updatetrello .boder-form {
   padding: 5% 10%;
 }
 
 #services h2 {
-  padding-bottom: 3%;
+  margin: 0px;
 }
 
 #services .snip-right {
@@ -6439,6 +6443,23 @@ readers do not read off random characters that represent icons */
 #services .snip-left.hover figcaption p {
   transform: translateX(0px);
   opacity: 1;
+}
+
+#services .title-bar {
+  margin: auto;
+  padding: 1%;
+  width: 80%;
+  color: white;
+  padding-left: 2%;
+  text-align: center;
+  margin-bottom: 4%;
+  text-transform: uppercase;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 5px, #0099cc 50%, rgba(0, 0, 0, 0));
+}
+
+#services .title-bar-delay {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 
 .container-slider {
@@ -6726,6 +6747,10 @@ h3 {
 
 .dropdown-menu .dropdown-divider {
   margin: 0px;
+}
+
+.card-title {
+  margin-bottom: -5px !important;
 }
 
 .footer {

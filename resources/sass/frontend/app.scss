@@ -238,7 +238,9 @@ h3 {
         margin: 0px;
     }
 }
-
+.card-title{
+    margin-bottom: -5px !important;
+}
 // footer
 .footer {
     background-color: #e3f2fd;
@@ -253,6 +255,12 @@ h3 {
     }
     .license {
         background-color: $color-background;
+        // position: absolute;
+        // width: 100%;
+        // left: 0px;
+        // bottom: 0px;
+        // right: 0px;
+        // margin:0px;
     }
     .footer-container {
         padding-bottom: 2%;
