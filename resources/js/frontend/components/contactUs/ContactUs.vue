@@ -16,7 +16,7 @@
                     <textarea type="text" class="form-control" rows="5" placeholder="Contact content ※"></textarea>
                 </div>
                 <div class="form-group text-center">
-                    <button type="submit" class="btn btn col-md-5 hbtn hb-fill-right">Sign in</button>
+                    <button type="submit" class="btn btn col-md-3 hbtn hb-fill-right">Sign in</button>
                 </div>
                 
             </form>
