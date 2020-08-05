@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     @include('backend.head')
-    <body>
+    <body class="hold-transition sidebar-mini layout-fixed">
         <div id="admin"></div>
-        @include('backend.foot')
     </body>
+    @include('backend.foot')
     
 </html>

@@ -1,1 +1,24 @@
-//
+@import '../variable';
+@import 'pages/dashboard.scss';
+
+
+// topmenu
+.user-panel{
+    top: -8px;
+}
+.os-content-glue{
+    height: 0px !important;
+}
+.os-content{
+    padding: 0px !important;
+}
+.breadcrumb{
+    background-color: white;
+    margin-bottom: 0px !important;
+    padding: 0.5rem 1rem !important;
+}
+.main-footer{
+    padding-top: 4px !important;
+    padding-left: 1% !important;
+    padding-bottom: 0px !important;
+}

@@ -1,0 +1,47 @@
+#dashboard {
+    // margin-top: 1%;
+    padding-top: 2%;
+    .main-box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: #20c997;
+    }
+
+    .main-box-ex {
+        background-color: $teal;
+    }
+
+    .small-box-footer {
+        width: 100%;
+        margin-top: 7%;
+    }
+
+    .small-box {
+        text-align: center;
+        min-height: 150px;
+
+        .icon>i {
+            top: 37px;
+            font-size: 90px;
+        }
+
+        &:hover .icon>i {
+            font-size: 70px;
+            top: 13px;
+            right: 20%;
+        }
+
+        .icon-email>i {
+            top: 48px;
+        }
+
+        .icon-cloud>i {
+            top: 45.4px;
+        }
+
+        .icon-bar>i {
+            top: 43px;
+        }
+    }
+}

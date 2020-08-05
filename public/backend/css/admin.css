@@ -1,0 +1,72 @@
+#dashboard {
+  padding-top: 2%;
+}
+
+#dashboard .main-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #20c997;
+}
+
+#dashboard .main-box-ex {
+  background-color: #81F7D8;
+}
+
+#dashboard .small-box-footer {
+  width: 100%;
+  margin-top: 7%;
+}
+
+#dashboard .small-box {
+  text-align: center;
+  min-height: 150px;
+}
+
+#dashboard .small-box .icon > i {
+  top: 37px;
+  font-size: 90px;
+}
+
+#dashboard .small-box:hover .icon > i {
+  font-size: 70px;
+  top: 13px;
+  right: 20%;
+}
+
+#dashboard .small-box .icon-email > i {
+  top: 48px;
+}
+
+#dashboard .small-box .icon-cloud > i {
+  top: 45.4px;
+}
+
+#dashboard .small-box .icon-bar > i {
+  top: 43px;
+}
+
+.user-panel {
+  top: -8px;
+}
+
+.os-content-glue {
+  height: 0px !important;
+}
+
+.os-content {
+  padding: 0px !important;
+}
+
+.breadcrumb {
+  background-color: white;
+  margin-bottom: 0px !important;
+  padding: 0.5rem 1rem !important;
+}
+
+.main-footer {
+  padding-top: 4px !important;
+  padding-left: 1% !important;
+  padding-bottom: 0px !important;
+}
+
