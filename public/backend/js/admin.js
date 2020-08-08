@@ -43,7 +43,7 @@
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "" + ({"Backend-home":"Backend-home"}[chunkId]||chunkId) + ".js"
+/******/ 		return __webpack_require__.p + "" + ({"Backend-about-add":"Backend-about-add","Backend-about-edit":"Backend-about-edit","Backend-about-list":"Backend-about-list","Backend-category-add":"Backend-category-add","Backend-category-edit":"Backend-category-edit","Backend-category-list":"Backend-category-list","Backend-contact-add":"Backend-contact-add","Backend-contact-edit":"Backend-contact-edit","Backend-contact-list":"Backend-contact-list","Backend-google-list":"Backend-google-list","Backend-home":"Backend-home","Backend-location-add":"Backend-location-add","Backend-location-edit":"Backend-location-edit","Backend-location-list":"Backend-location-list","Backend-news-add":"Backend-news-add","Backend-news-edit":"Backend-news-edit","Backend-news-list":"Backend-news-list","Backend-trello-list":"Backend-trello-list","Backend-user-add":"Backend-user-add","Backend-user-edit":"Backend-user-edit","Backend-user-forgot":"Backend-user-forgot","Backend-user-list":"Backend-user-list","Backend-user-profile":"Backend-user-profile"}[chunkId]||chunkId) + ".js"
 /******/ 	}
 /******/
 /******/ 	// The require function
@@ -56750,6 +56750,40 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/backend/routers/aboutRoter.js":
+/*!****************************************************!*\
+  !*** ./resources/js/backend/routers/aboutRoter.js ***!
+  \****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+
+
+var aboutRouter = [{
+  path: "/about",
+  component: function component() {
+    return __webpack_require__.e(/*! import() | Backend-about-list */ "Backend-about-list").then(__webpack_require__.bind(null, /*! ../components/about/index */ "./resources/js/backend/components/about/index.vue"));
+  },
+  name: "about"
+}, {
+  path: "/about/add",
+  component: function component() {
+    return __webpack_require__.e(/*! import() | Backend-about-add */ "Backend-about-add").then(__webpack_require__.bind(null, /*! ../components/about/add */ "./resources/js/backend/components/about/add.vue"));
+  },
+  name: "aboutAdd"
+}, {
+  path: "/about/edit/:id",
+  component: function component() {
+    return __webpack_require__.e(/*! import() | Backend-about-edit */ "Backend-about-edit").then(__webpack_require__.bind(null, /*! ../components/about/edit */ "./resources/js/backend/components/about/edit.vue"));
+  },
+  name: "aboutEdit"
+}];
+/* harmony default export */ __webpack_exports__["default"] = (aboutRouter);
+
+/***/ }),
+
 /***/ "./resources/js/backend/routers/backendRouter.js":
 /*!*******************************************************!*\
   !*** ./resources/js/backend/routers/backendRouter.js ***!
@@ -56772,6 +56806,164 @@ var backendRouter = [{
 
 /***/ }),
 
+/***/ "./resources/js/backend/routers/categoryRoter.js":
+/*!*******************************************************!*\
+  !*** ./resources/js/backend/routers/categoryRoter.js ***!
+  \*******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+
+
+var categoryRouter = [{
+  path: "/category",
+  component: function component() {
+    return __webpack_require__.e(/*! import() | Backend-category-list */ "Backend-category-list").then(__webpack_require__.bind(null, /*! ../components/categories/index */ "./resources/js/backend/components/categories/index.vue"));
+  },
+  name: "category"
+}, {
+  path: "/category/add",
+  component: function component() {
+    return __webpack_require__.e(/*! import() | Backend-category-add */ "Backend-category-add").then(__webpack_require__.bind(null, /*! ../components/categories/add */ "./resources/js/backend/components/categories/add.vue"));
+  },
+  name: "categoryAdd"
+}, {
+  path: "/category/edit/:id",
+  component: function component() {
+    return __webpack_require__.e(/*! import() | Backend-category-edit */ "Backend-category-edit").then(__webpack_require__.bind(null, /*! ../components/categories/edit */ "./resources/js/backend/components/categories/edit.vue"));
+  },
+  name: "categoryEdit"
+}];
+/* harmony default export */ __webpack_exports__["default"] = (categoryRouter);
+
+/***/ }),
+
+/***/ "./resources/js/backend/routers/contactRoter.js":
+/*!******************************************************!*\
+  !*** ./resources/js/backend/routers/contactRoter.js ***!
+  \******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+
+
+var contactRouter = [{
+  path: "/contact",
+  component: function component() {
+    return __webpack_require__.e(/*! import() | Backend-contact-list */ "Backend-contact-list").then(__webpack_require__.bind(null, /*! ../components/contacts/index */ "./resources/js/backend/components/contacts/index.vue"));
+  },
+  name: "contact"
+}, {
+  path: "/contact/add",
+  component: function component() {
+    return __webpack_require__.e(/*! import() | Backend-contact-add */ "Backend-contact-add").then(__webpack_require__.bind(null, /*! ../components/contacts/add */ "./resources/js/backend/components/contacts/add.vue"));
+  },
+  name: "contactAdd"
+}, {
+  path: "/contact/edit/:id",
+  component: function component() {
+    return __webpack_require__.e(/*! import() | Backend-contact-edit */ "Backend-contact-edit").then(__webpack_require__.bind(null, /*! ../components/contacts/edit */ "./resources/js/backend/components/contacts/edit.vue"));
+  },
+  name: "contactEdit"
+}];
+/* harmony default export */ __webpack_exports__["default"] = (contactRouter);
+
+/***/ }),
+
+/***/ "./resources/js/backend/routers/googleRoter.js":
+/*!*****************************************************!*\
+  !*** ./resources/js/backend/routers/googleRoter.js ***!
+  \*****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+
+
+var googleRouter = [{
+  path: "/google",
+  component: function component() {
+    return __webpack_require__.e(/*! import() | Backend-google-list */ "Backend-google-list").then(__webpack_require__.bind(null, /*! ../components/services/google */ "./resources/js/backend/components/services/google.vue"));
+  },
+  name: "google"
+}];
+/* harmony default export */ __webpack_exports__["default"] = (googleRouter);
+
+/***/ }),
+
+/***/ "./resources/js/backend/routers/locationRoter.js":
+/*!*******************************************************!*\
+  !*** ./resources/js/backend/routers/locationRoter.js ***!
+  \*******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+
+
+var locationRouter = [{
+  path: "/location",
+  component: function component() {
+    return __webpack_require__.e(/*! import() | Backend-location-list */ "Backend-location-list").then(__webpack_require__.bind(null, /*! ../components/location/index */ "./resources/js/backend/components/location/index.vue"));
+  },
+  name: "location"
+}, {
+  path: "/location/add",
+  component: function component() {
+    return __webpack_require__.e(/*! import() | Backend-location-add */ "Backend-location-add").then(__webpack_require__.bind(null, /*! ../components/location/add */ "./resources/js/backend/components/location/add.vue"));
+  },
+  name: "locationAdd"
+}, {
+  path: "/location/edit/:id",
+  component: function component() {
+    return __webpack_require__.e(/*! import() | Backend-location-edit */ "Backend-location-edit").then(__webpack_require__.bind(null, /*! ../components/location/edit */ "./resources/js/backend/components/location/edit.vue"));
+  },
+  name: "locationEdit"
+}];
+/* harmony default export */ __webpack_exports__["default"] = (locationRouter);
+
+/***/ }),
+
+/***/ "./resources/js/backend/routers/newsRoter.js":
+/*!***************************************************!*\
+  !*** ./resources/js/backend/routers/newsRoter.js ***!
+  \***************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+
+
+var newsRouter = [{
+  path: "/news",
+  component: function component() {
+    return __webpack_require__.e(/*! import() | Backend-news-list */ "Backend-news-list").then(__webpack_require__.bind(null, /*! ../components/news/index */ "./resources/js/backend/components/news/index.vue"));
+  },
+  name: "news"
+}, {
+  path: "/news/add",
+  component: function component() {
+    return __webpack_require__.e(/*! import() | Backend-news-add */ "Backend-news-add").then(__webpack_require__.bind(null, /*! ../components/news/add */ "./resources/js/backend/components/news/add.vue"));
+  },
+  name: "newsAdd"
+}, {
+  path: "/news/edit/:id",
+  component: function component() {
+    return __webpack_require__.e(/*! import() | Backend-news-edit */ "Backend-news-edit").then(__webpack_require__.bind(null, /*! ../components/news/edit */ "./resources/js/backend/components/news/edit.vue"));
+  },
+  name: "newsEdit"
+}];
+/* harmony default export */ __webpack_exports__["default"] = (newsRouter);
+
+/***/ }),
+
 /***/ "./resources/js/backend/routers/routers.js":
 /*!*************************************************!*\
   !*** ./resources/js/backend/routers/routers.js ***!
@@ -56782,6 +56974,14 @@ var backendRouter = [{
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _backendRouter__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./backendRouter */ "./resources/js/backend/routers/backendRouter.js");
+/* harmony import */ var _aboutRoter__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./aboutRoter */ "./resources/js/backend/routers/aboutRoter.js");
+/* harmony import */ var _categoryRoter__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./categoryRoter */ "./resources/js/backend/routers/categoryRoter.js");
+/* harmony import */ var _contactRoter__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./contactRoter */ "./resources/js/backend/routers/contactRoter.js");
+/* harmony import */ var _locationRoter__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./locationRoter */ "./resources/js/backend/routers/locationRoter.js");
+/* harmony import */ var _newsRoter__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./newsRoter */ "./resources/js/backend/routers/newsRoter.js");
+/* harmony import */ var _googleRoter__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./googleRoter */ "./resources/js/backend/routers/googleRoter.js");
+/* harmony import */ var _trelloRoter__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./trelloRoter */ "./resources/js/backend/routers/trelloRoter.js");
+/* harmony import */ var _uesrRoter__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./uesrRoter */ "./resources/js/backend/routers/uesrRoter.js");
 
 
 function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
@@ -56798,9 +56998,83 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 
 
 
-var routes = _toConsumableArray(_backendRouter__WEBPACK_IMPORTED_MODULE_0__["default"]);
 
+
+
+
+
+
+
+var routes = [].concat(_toConsumableArray(_backendRouter__WEBPACK_IMPORTED_MODULE_0__["default"]), _toConsumableArray(_aboutRoter__WEBPACK_IMPORTED_MODULE_1__["default"]), _toConsumableArray(_categoryRoter__WEBPACK_IMPORTED_MODULE_2__["default"]), _toConsumableArray(_contactRoter__WEBPACK_IMPORTED_MODULE_3__["default"]), _toConsumableArray(_locationRoter__WEBPACK_IMPORTED_MODULE_4__["default"]), _toConsumableArray(_newsRoter__WEBPACK_IMPORTED_MODULE_5__["default"]), _toConsumableArray(_googleRoter__WEBPACK_IMPORTED_MODULE_6__["default"]), _toConsumableArray(_trelloRoter__WEBPACK_IMPORTED_MODULE_7__["default"]), _toConsumableArray(_uesrRoter__WEBPACK_IMPORTED_MODULE_8__["default"]));
 /* harmony default export */ __webpack_exports__["default"] = (routes);
+
+/***/ }),
+
+/***/ "./resources/js/backend/routers/trelloRoter.js":
+/*!*****************************************************!*\
+  !*** ./resources/js/backend/routers/trelloRoter.js ***!
+  \*****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+
+
+var trelloRouter = [{
+  path: "/trello",
+  component: function component() {
+    return __webpack_require__.e(/*! import() | Backend-trello-list */ "Backend-trello-list").then(__webpack_require__.bind(null, /*! ../components/services/trello */ "./resources/js/backend/components/services/trello.vue"));
+  },
+  name: "trello"
+}];
+/* harmony default export */ __webpack_exports__["default"] = (trelloRouter);
+
+/***/ }),
+
+/***/ "./resources/js/backend/routers/uesrRoter.js":
+/*!***************************************************!*\
+  !*** ./resources/js/backend/routers/uesrRoter.js ***!
+  \***************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+
+
+var userRouter = [{
+  path: "/user",
+  component: function component() {
+    return __webpack_require__.e(/*! import() | Backend-user-list */ "Backend-user-list").then(__webpack_require__.bind(null, /*! ../components/users/index */ "./resources/js/backend/components/users/index.vue"));
+  },
+  name: "user"
+}, {
+  path: "/user/add",
+  component: function component() {
+    return __webpack_require__.e(/*! import() | Backend-user-add */ "Backend-user-add").then(__webpack_require__.bind(null, /*! ../components/users/add */ "./resources/js/backend/components/users/add.vue"));
+  },
+  name: "userAdd"
+}, {
+  path: "/user/edit/:id",
+  component: function component() {
+    return __webpack_require__.e(/*! import() | Backend-user-edit */ "Backend-user-edit").then(__webpack_require__.bind(null, /*! ../components/users/edit */ "./resources/js/backend/components/users/edit.vue"));
+  },
+  name: "userEdit"
+}, {
+  path: "/user/forgot",
+  component: function component() {
+    return __webpack_require__.e(/*! import() | Backend-user-forgot */ "Backend-user-forgot").then(__webpack_require__.bind(null, /*! ../components/users/password */ "./resources/js/backend/components/users/password.vue"));
+  },
+  name: "userForgot"
+}, {
+  path: "/user/profile",
+  component: function component() {
+    return __webpack_require__.e(/*! import() | Backend-user-profile */ "Backend-user-profile").then(__webpack_require__.bind(null, /*! ../components/users/profile */ "./resources/js/backend/components/users/profile.vue"));
+  },
+  name: "userProfile"
+}];
+/* harmony default export */ __webpack_exports__["default"] = (userRouter);
 
 /***/ }),
 
