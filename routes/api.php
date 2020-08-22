@@ -19,5 +19,9 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::get('/{any}', function () {
-    return view("wellcome");
+    return view("frontend.app");
 })->where('any', '.*')->middleware('api');
+
+Route::get('/admin/{any}', function () {
+    return view("backend.app");
+})->where('any', 'admin/.*')->middleware('api');

@@ -56818,19 +56818,19 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var categoryRouter = [{
-  path: "/category",
+  path: "/admin/category",
   component: function component() {
     return __webpack_require__.e(/*! import() | Backend-category-list */ "Backend-category-list").then(__webpack_require__.bind(null, /*! ../components/categories/index */ "./resources/js/backend/components/categories/index.vue"));
   },
   name: "category"
 }, {
-  path: "/category/add",
+  path: "/admin/category/add",
   component: function component() {
     return __webpack_require__.e(/*! import() | Backend-category-add */ "Backend-category-add").then(__webpack_require__.bind(null, /*! ../components/categories/add */ "./resources/js/backend/components/categories/add.vue"));
   },
   name: "categoryAdd"
 }, {
-  path: "/category/edit/:id",
+  path: "/admin/category/edit/:id",
   component: function component() {
     return __webpack_require__.e(/*! import() | Backend-category-edit */ "Backend-category-edit").then(__webpack_require__.bind(null, /*! ../components/categories/edit */ "./resources/js/backend/components/categories/edit.vue"));
   },

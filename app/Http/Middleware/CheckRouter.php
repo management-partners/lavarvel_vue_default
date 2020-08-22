@@ -18,7 +18,7 @@ class CheckRouter
      */
     public function handle($request, Closure $next)
     {
-        if($request->is('admin') || $request->is('admin/.*')){
+        if($request->is('admin') || $request->is('admin/*')){
             return response(view('backend.app'));
         }
         return response(view('frontend.app'));

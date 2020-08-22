@@ -70,3 +70,26 @@
   padding-bottom: 0px !important;
 }
 
+.lst-content {
+  padding-top: 1% !important;
+}
+
+.pagination {
+  margin: 0px;
+}
+
+.fa-sort {
+  margin-top: 2%;
+}
+
+.fa-sort:hover {
+  cursor: pointer;
+}
+
+.change-item {
+  margin-bottom: 0px;
+  margin-top: 5px;
+  margin-right: 2%;
+  margin-left: 2%;
+}
+

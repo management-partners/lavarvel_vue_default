@@ -34,7 +34,7 @@ mix
     // .copy('node_modules/daterangepicker/daterangepicker.css', 'public/backend/css')
     // .copy('node_modules/daterangepicker/daterangepicker.js', 'public/backend/js')
     // .copy('node_modules/overlayScrollbars/js/jquery.overlayScrollbars.min.js', 'public/backend/js')
-    .copy('node_modules/icheck-bootstrap/icheck-bootstrap.min.css', 'public/backend/css')
+    .copy('node_modules/icheck-bootstrap/icheck-bootstrap.min.css', 'public/backend/css');
     // .copy('node_modules/jqvmap-novulnerability/dist/jquery.vmap.min.js', 'public/backend/js')
     // .copy('node_modules/jqvmap-novulnerability/dist/jqvmap.min.css', 'public/backend/css')
     // .copy('node_modules/jquery/jquery.min.js', 'public/backend/js')

@@ -3,22 +3,48 @@
 
 
 // topmenu
-.user-panel{
+.user-panel {
     top: -8px;
 }
-.os-content-glue{
+
+.os-content-glue {
     height: 0px !important;
 }
-.os-content{
+
+.os-content {
     padding: 0px !important;
 }
-.breadcrumb{
+
+.breadcrumb {
     background-color: white;
     margin-bottom: 0px !important;
     padding: 0.5rem 1rem !important;
 }
-.main-footer{
+
+.main-footer {
     padding-top: 4px !important;
     padding-left: 1% !important;
     padding-bottom: 0px !important;
+}
+
+.lst-content {
+    padding-top: 1% !important;
+}
+
+.pagination {
+    margin: 0px;
+}
+
+.fa-sort {
+    margin-top: 2%;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+.change-item{
+    margin-bottom: 0px;
+    margin-top: 5px;
+    margin-right: 2%;
+    margin-left: 2%;
 }

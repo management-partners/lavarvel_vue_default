@@ -12,15 +12,11 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-
-Route::get('/{any}', function () {
-    return view("frontend.app");
-})->where('any', '.*')->middleware('api');
-
-Route::get('/admin/{any}', function () {
-    return view("backend.app");
-})->where('any', 'admin/.*')->middleware('api');
+Route::group(['namespace'=>'backend','middleware'=>'api'], function () {
+    Route::get('/admin/{any}', function () {
+        return view("backend.app");
+    })->where('any', 'admin/.*');
+});
+// Route::get('/admin/{any}', function () {
+//     return view("backend.app");
+// })->where('any', '.*')->middleware('api');

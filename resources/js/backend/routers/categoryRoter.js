@@ -1,7 +1,7 @@
 "use strict";
 const categoryRouter = [
     {
-        path: "/category",
+        path: "/admin/category",
         component: () =>
             import(
                 /* webpackChunkName: "Backend-category-list" */ "../components/categories/index"
@@ -9,7 +9,7 @@ const categoryRouter = [
         name: "category"
     },
     {
-        path: "/category/add",
+        path: "/admin/category/add",
         component: () =>
             import(
                 /* webpackChunkName: "Backend-category-add" */ "../components/categories/add"
@@ -17,7 +17,7 @@ const categoryRouter = [
         name: "categoryAdd"
     },
     {
-        path: "/category/edit/:id",
+        path: "/admin/category/edit/:id",
         component: () =>
             import(
                 /* webpackChunkName: "Backend-category-edit" */ "../components/categories/edit"
